@@ -48,7 +48,8 @@ async function startServer() {
 }
 
 // Line 12: Startup error handle કરો
+
 startServer().catch((error) => {
-    console.error("Startup failed:", error.message);
+    console.error("Startup failed:", error);
     process.exit(1);
 });
